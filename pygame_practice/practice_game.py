@@ -17,9 +17,9 @@ clock = pygame.time.Clock()
 ############################################################
 
 # 1. User Game Initialization (Background, Game Image, Coordinate, Speed, Font, etc)
-background = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/background.png")
+background = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/pygame_practice/background.png")
 
-character = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/character.png")
+character = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/pygame_practice/dog.png")
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
@@ -30,7 +30,7 @@ character_y_pos = screen_height - character_height
 to_x = 0
 character_speed = 10
 
-poo = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/enemy.png")
+poo = pygame.image.load("/Users/yeyounghan/Desktop/pygame_basic/pygame_practice/poo.png")
 poo_size = poo.get_rect().size
 poo_width = poo_size[0]
 poo_height = poo_size[1]
