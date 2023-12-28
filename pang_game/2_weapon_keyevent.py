@@ -1,30 +1,31 @@
 import os
 import pygame
+
 ############################################################
 # Basic Initialization
 pygame.init()
 
 # Set Screen Size
-screen_width = 480
-screen_height = 640
+screen_width = 640
+screen_height = 480
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 # Screen Title
-pygame.display.set_caption("Pang Game")
+pygame.display.set_caption("Nado Pang")
 
 # FPS
 clock = pygame.time.Clock()
-############################################################
+##############################################################
 
 # 1. User Game Initialization (Background, Game Image, Coordinate, Speed, Font, etc)
-current_path = os.path.dirname(__file__)
-image_path = os.path.join(current_path, "images")
+current_path = os.path.dirname(__file__)  # 현재 파일의 위치 반환
+image_path = os.path.join(current_path, "images")  # images 폴더 위치 반환
 
 background = pygame.image.load(os.path.join(image_path, "background.png"))
 
 stage = pygame.image.load(os.path.join(image_path, "stage.png"))
 stage_size = stage.get_rect().size
-stage_height = stage_size[1]
+stage_height = stage_size[1]  # 스테이지의 높이 위에 캐릭터를 두기 위해 사용
 
 character = pygame.image.load(os.path.join(image_path, "character.png"))
 character_size = character.get_rect().size
@@ -35,6 +36,13 @@ character_y_pos = screen_height - character_height - stage_height
 
 character_to_x = 0
 character_speed = 5
+
+weapon = pygame.image.load(os.path.join(image_path, "weapon.png"))
+weapon_size = weapon.get_rect().size
+weapon_width = weapon_size[0]
+
+weapons = []
+weapon_speed = 10
 
 running = True
 while running:
@@ -51,7 +59,9 @@ while running:
             elif event.key == pygame.K_RIGHT:
                 character_to_x += character_speed
             elif event.key == pygame.K_SPACE:
-                pass
+                weapon_x_pos = character_x_pos + (character_width / 2) - (weapon_width / 2)
+                weapon_y_pos = character_y_pos
+                weapons.append([weapon_x_pos, weapon_y_pos])
 
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
@@ -62,13 +72,25 @@ while running:
 
     if character_x_pos < 0:
         character_x_pos = 0
-    elif character_to_x > screen_width - character_width:
+    elif character_x_pos > screen_width - character_width:
         character_x_pos = screen_width - character_width
+
+    # Weapon Location
+    # 100, 200 -> 180, 160, 140, ...
+    # 500, 200 -> 180, 160, 140, ...
+    weapons = [[w[0], w[1] - weapon_speed] for w in weapons]  # 무기 위치를 위로
+
+    # Remove weapon if reach top
+    weapons = [[w[0], w[1]] for w in weapons if w[1] > 0]
 
     # 4. Collision Handling
 
     # 5. Display
-    screen.blit(background, (0,0))
+    screen.blit(background, (0, 0))
+
+    for weapon_x_pos, weapon_y_pos in weapons:
+        screen.blit(weapon, (weapon_x_pos, weapon_y_pos))
+
     screen.blit(stage, (0, screen_height - stage_height))
     screen.blit(character, (character_x_pos, character_y_pos))
 
