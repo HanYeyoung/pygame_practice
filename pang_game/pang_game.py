@@ -21,15 +21,15 @@ current_path = os.path.dirname(__file__)  # current file's location
 image_path = os.path.join(current_path, "images")  # images folder location
 
 # background setup
-background = pygame.image.load(os.path.join(image_path, "background.png"))
+background = pygame.image.load(os.path.join(image_path, "images/background.png"))
 
 # stage setup
-stage = pygame.image.load(os.path.join(image_path, "stage.png"))
+stage = pygame.image.load(os.path.join(image_path, "images/stage.png"))
 stage_size = stage.get_rect().size
 stage_height = stage_size[1]
 
 # character setup
-character = pygame.image.load(os.path.join(image_path, "character.png"))
+character = pygame.image.load(os.path.join(image_path, "images/character.png"))
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
@@ -40,7 +40,7 @@ character_to_x = 0
 character_speed = 5
 
 # weapon setup
-weapon = pygame.image.load(os.path.join(image_path, "weapon.png"))
+weapon = pygame.image.load(os.path.join(image_path, "images/weapon.png"))
 weapon_size = weapon.get_rect().size
 weapon_width = weapon_size[0]
 
@@ -49,10 +49,10 @@ weapon_speed = 10
 
 # ball setup
 ball_images = [
-    pygame.image.load(os.path.join(image_path, "balloon1.png")),
-    pygame.image.load(os.path.join(image_path, "balloon2.png")),
-    pygame.image.load(os.path.join(image_path, "balloon3.png")),
-    pygame.image.load(os.path.join(image_path, "balloon4.png"))]
+    pygame.image.load(os.path.join(image_path, "images/balloon1.png")),
+    pygame.image.load(os.path.join(image_path, "images/balloon2.png")),
+    pygame.image.load(os.path.join(image_path, "images/balloon3.png")),
+    pygame.image.load(os.path.join(image_path, "images/balloon4.png"))]
 
 # initial speed based on ball size
 ball_speed_y = [-18, -15, -12, -9]
