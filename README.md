@@ -6,7 +6,7 @@ Python
 ## Project: Pang Game
 
 ## Project: Poo Game
-📌 **poo_game.py**
+📌 **poo_game.py** (inside pygame_practice folder)
 
 <img width="474" alt="poo_game" src="https://github.com/HanYeyoung/winter2023/assets/134107088/d3ed77bf-33d5-4cc2-80ca-d5ea468f5c43">
 
