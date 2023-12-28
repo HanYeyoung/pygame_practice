@@ -4,7 +4,7 @@
 Python
 
 ## Project: Poo Game
-📌 pygame_png
+📌 **practice_game.py**
 
 📌 **Image Sources**
 1. dog.png https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Dog-Emoji.png
