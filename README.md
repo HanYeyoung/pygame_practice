@@ -9,6 +9,7 @@ Python
 📌 **poo_game.py**
 
 <img width="474" alt="poo_game" src="https://github.com/HanYeyoung/winter2023/assets/134107088/d3ed77bf-33d5-4cc2-80ca-d5ea468f5c43">
+
 random으로 떨어지는 똥을 피하는 개. 개는 좌우로만 움직일 수 있다
 Pang Game을 만들기 위한 연습 게임
 
