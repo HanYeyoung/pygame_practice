@@ -5,7 +5,8 @@ Python
 
 ## Project: Poo Game
 📌 **poo_game.py**
-떨어지는 똥을 피하는 개
+
+random으로 떨어지는 똥을 피하는 개. 개는 좌우로만 움직일 수 있다
 
 📌 **Image Sources**
 1. dog.png https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Dog-Emoji.png
