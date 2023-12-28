@@ -4,7 +4,8 @@
 Python
 
 ## Project: Poo Game
-📌 **practice_game.py**
+📌 **poo_game.py**
+떨어지는 똥을 피하는 개
 
 📌 **Image Sources**
 1. dog.png https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Dog-Emoji.png
