@@ -31,7 +31,12 @@ Run away from poop that falls from the sky! It will fall randomly.
 
 1. dog.png https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Dog-Emoji.png
 2. poo.png https://emojiisland.com/cdn/shop/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_large.png?v=1571606036
-
+3. background.png https://www.freepik.com/free-vector/arcade-game-world-pixel-scene_4815143.htm#query=arcade-game-world-pixel-scene&position=8
+4. character.png https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffreepng%2Fcute-dog-illustration_9009549.html&psig=AOvVaw06wGtSuUXmX_yhk6jQ7V4G&ust=1703901678772000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKiPgsTGs4MDFQAAAAAdAAAAABAE
+6. balloon1.png https://www.pngaaa.com/detail/617079
+   balloon2.png https://www.google.com/url?sa=i&url=https%3A%2F%2Fhicodenver.com%2Fproduct%2Ftuf-tex-latex-round-balloon-metallic-blue%2F&psig=AOvVaw2rYSSJ813JhZ4HcovdGgEQ&ust=1703901755173000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiJkunGs4MDFQAAAAAdAAAAABAD
+   balloon3.png https://www.google.com/imgres?imgurl=https%3A%2F%2Fbanner2.cleanpng.com%2F20181201%2Fcyg%2Fkisspng-qualatex-latex-balloon-giant-round-balloon-yellow-5c028b8dcf8575.13003727154367066985.jpg&tbnid=d3nTelMKHVjrUM&vet=12ahUKEwiy3vPMxrODAxV4mIkEHaXxDUcQMygPegQIARBz..i&imgrefurl=https%3A%2F%2Fwww.cleanpng.com%2Fpng-qualatex-latex-balloon-giant-round-balloon-yellow-6934319%2F&docid=Y8T2vmyj1SQt_M&w=900&h=1020&q=balloon%20png%20circular&ved=2ahUKEwiy3vPMxrODAxV4mIkEHaXxDUcQMygPegQIARBz
+   balloon4.png https://hicodenver.com/product/tuf-tex-latex-round-balloon-red/
 
 📌 **Project Idea Source**
 
