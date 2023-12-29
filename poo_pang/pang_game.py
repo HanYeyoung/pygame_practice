@@ -27,7 +27,7 @@ background = pygame.image.load(os.path.join(image_path, "background.png"))
 # stage setup
 stage = pygame.image.load(os.path.join(image_path, "stage.png"))
 stage_size = stage.get_rect().size
-stage_height = stage_size[1]  # 스테이지의 높이 위에 캐릭터를 두기 위해 사용
+stage_height = stage_size[1]
 
 # character setup
 character = pygame.image.load(os.path.join(image_path, "character.png"))
@@ -187,8 +187,8 @@ while running:
 
             # Check for collision
             if weapon_rect.colliderect(ball_rect):
-                weapon_to_remove = weapon_index  # 해당 무기 없애기 위한 값 설정
-                ball_to_remove = ball_index # 해당 공 없애기 위한 값 설정
+                weapon_to_remove = weapon_index
+                ball_to_remove = ball_index
 
                 # if the ball is not the smallest, divide to the next smaller size
                 if ball_img_index < 3:
@@ -215,15 +215,15 @@ while running:
                     balls.append({
                         "pos_x": ball_pos_x + (ball_width / 2) - (small_ball_width / 2),
                         "pos_y": ball_pos_y + (ball_height / 2) - (small_ball_height / 2),
-                        "img_index": ball_img_index + 1,  # 공의 이미지 인덱스
+                        "img_index": ball_img_index + 1,
                         "to_x": 3,
                         "to_y": -6,
                         "init_speed_y": ball_speed_y[ball_img_index + 1]
                     })
                 break
         else:  # continue game
-            continue  # 안쪽 for 문 조건이 맞지 않으면 continue. 바깥 for 문 계쏙 수행
-        break  # 안쪽 for 문에서 break를 만나면 여기로 진입 가능. 이중 for문 한번에 탈출
+            continue
+        break
 
     # Remove collided ball/weapon
     if ball_to_remove > -1:
