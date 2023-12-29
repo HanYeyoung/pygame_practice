@@ -4,7 +4,7 @@
 Python
 
 ## Project: Pang Game
-📌 **poo_game.py** (inside pygame_practice folder)
+📌 **poo_game.py** (inside poo_pang folder)
 
 <img width="562" alt="Dog Pang Game" src="https://github.com/HanYeyoung/winter2023/assets/134107088/83e60673-76e5-42f0-be9b-bb6b51d74997">
 
@@ -15,6 +15,8 @@ Python
 You are a dog. Use your weapon and get rid of all the balls that fall from the sky.
 
 The ball will be divided into small sizes as it is attacked! Try to remove all the balls in 10 seconds.
+
+**❗️Practice Version of the game: pang.py (inside pang_game folder)**
 
 ## Project: Poo Game
 📌 **poo_game.py** (inside pygame_practice folder)
