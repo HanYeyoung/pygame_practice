@@ -1,4 +1,4 @@
-# Winter 2023
+# PyGame_Practice
 Projects done in Winter 2023
 
 ## Language Used
